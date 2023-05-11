@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="red">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
+
+		<script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+
 		%sveltekit.head%
 	</head>
+
 	<body data-sveltekit-preload-data="hover">
+
+		<!-- Daisy UI Navbar HTML -->
+		<div class="navbar bg-accent">
+			<div class="flex-1">
+			  <a class="btn btn-ghost normal-case text-xl">Avinh's Portfolio</a>
+			</div>
+			<div class="flex-none">
+			  <ul class="menu menu-horizontal px-1">
+				<li><a>About me</a></li>
+				<li tabindex="0">
+				  <a>
+					Projects
+					<svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+				  </a>
+				  <ul class="p-2 bg-base-100">
+					<li><a>Submenu 1</a></li>
+					<li><a>Submenu 2</a></li>
+				  </ul>
+				</li>
+				<li><a>Work Experience</a></li>
+				<li><a>Contact Me</a></li>
+			  </ul>
+			</div>
+		  </div>
+
 		<div style="display: contents">%sveltekit.body%</div>
+
 	</body>
 </html>
