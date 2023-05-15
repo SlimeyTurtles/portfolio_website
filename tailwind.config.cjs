@@ -25,6 +25,8 @@ const config = {
 
 	plugins: [
 		require("@tailwindcss/typography"),
+		require('tailwindcss'),
+    	require('autoprefixer'),
 		require('daisyui'),
 	]
 };
